@@ -9,7 +9,7 @@ INNER JOIN
     job_postings_fact ON skills_job_dim.job_id=job_postings_fact.job_id
 WHERE 
     job_title_short='Data Analyst' AND
-    salary_year_avg is NOT NULL AND
+    salary_year_avg IS NOT NULL AND
     job_work_from_home=TRUE
 GROUP BY
     skills
